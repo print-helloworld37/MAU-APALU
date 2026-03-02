@@ -80,7 +80,7 @@ sudo apt install gradle
 
 ```bash
 # Download script
-wget https://raw.githubusercontent.com/yourusername/web2apk/main/scripts/setup-vps.sh
+wget https://raw.githubusercontent.com/print-helloworld37/mau-apalu/main/scripts/setup-vps.sh
 
 # Jalankan
 chmod +x setup-vps.sh
@@ -97,7 +97,7 @@ chmod +x setup-vps.sh
 ### 2. Clone & Setup Project
 
 ```bash
-git clone https://github.com/yourusername/web2apk.git
+git clone https://github.com/print-helloworld37/mau-apalu.git
 cd web2apk
 npm install
 cp .env.example .env
