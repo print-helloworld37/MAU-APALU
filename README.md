@@ -98,7 +98,7 @@ chmod +x setup-vps.sh
 
 ```bash
 git clone https://github.com/print-helloworld37/mau-apalu.git
-cd web2apk
+cd mau-apalu
 npm install
 cp .env.example .env
 nano .env  # Edit dan isi BOT_TOKEN
@@ -147,11 +147,11 @@ ANTI_CLONE_SECRET=8f7a3b2c1d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f
 ### 4. Jalankan dengan PM2
 
 ```bash
-pm2 start src/bot.js --name "web2apk"
+pm2 start src/bot.js --name "mau-apalu"
 pm2 startup && pm2 save
 
 # Monitoring
-pm2 logs web2apk
+pm2 logs mau-apalu
 ```
 
 ### 5. Setup Local Bot API Server (Untuk File 2GB)
@@ -182,7 +182,7 @@ API_HASH=your_api_hash
 **4. Restart bot:**
 
 ```bash
-pm2 restart web2apk
+pm2 restart mau-apalu
 ```
 
 **Useful Commands:**
@@ -205,7 +205,7 @@ systemctl restart telegram-bot-api
 sudo apt install -y nginx
 
 # Create config
-sudo nano /etc/nginx/sites-available/web2apk
+sudo nano /etc/nginx/sites-available/mau+apalu
 ```
 
 Isi dengan (ganti `yourdomain.com` dengan domain Anda):
@@ -266,7 +266,7 @@ server {
 Aktifkan:
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/web2apk /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/mau-apalu /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
 ```
@@ -276,7 +276,7 @@ sudo systemctl reload nginx
 Jika Anda **tidak punya domain** dan ingin akses via IP VPS, gunakan konfigurasi ini:
 
 ```bash
-sudo nano /etc/nginx/sites-available/web2apk
+sudo nano /etc/nginx/sites-available/mau-apalu
 ```
 
 ```nginx
@@ -319,7 +319,7 @@ server {
 Aktifkan:
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/web2apk /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/mau-apalu /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
 ```
